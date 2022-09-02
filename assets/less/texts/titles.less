@@ -1,0 +1,41 @@
+///////////////////////////////////////////////////////////////////
+//
+//                       TITLES
+//
+///////////////////////////////////////////////////////////////////
+
+/* ========================= */
+/*      TITLE DEFAULT    	 */
+/* ========================= */
+
+.title-default{
+	margin: 0 0 50px 0;
+	text-transform: lowercase;
+	font-weight: 700;
+	color: @textColor;
+	.font-size(3.0);
+}
+
+/* ========================= */
+/*      TITLE FOOTER     	 */
+/* ========================= */
+
+.title-separator{
+	position: relative;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	text-transform: lowercase;
+	font-weight: 700;
+	color: @textColor;
+	.font-size(2.0);
+	
+	&:after{
+		content: "";
+		width: 20%;
+		height: 4px;
+		display: block;
+		float: right;
+		margin-top: 10px;
+		background: @white-light;
+	}
+}

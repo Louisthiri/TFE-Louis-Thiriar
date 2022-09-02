@@ -1,0 +1,13 @@
+.login{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.formulaireCrenaux{ 
+    margin-top: 2em;
+    margin-bottom: 2em; 
+    padding: 10px; 
+}
+#formCrenaux{
+    font-size: larger;
+    margin-top: 2em;
+}

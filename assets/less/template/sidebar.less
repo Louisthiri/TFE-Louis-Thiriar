@@ -1,0 +1,88 @@
+///////////////////////////////////////////////////////////////////
+//
+//                       Sidebar
+//
+///////////////////////////////////////////////////////////////////
+
+.sidebar{
+	width: 100%;
+	float: left;
+}
+
+.sidebar-widget{
+	position: relative;
+	margin-bottom: 40px;
+	padding: 50px 25px;
+	background-color: @widget-color;
+	overflow: hidden;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: @white-light;
+	.rounded(3px);
+	
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-color: @widget-color;
+		.opacity(0.75);
+	}
+	
+	&.widget-danger{
+		background-color: @danger-color;
+		
+		&:before{
+			background-color: @danger-color;
+		}
+	}
+	
+	&.widget-warning{
+		background-color: @warning-color;
+		
+		&:before{
+			background-color: @warning-color;
+		}
+	}
+	
+	&.widget-success{
+		background-color: @success-color;
+		
+		&:before{
+			background-color: @success-color;
+		}
+	}
+	
+	&.widget-primary{
+		background-color: @primary-color;
+		
+		&:before{
+			background-color: @primary-color;
+		}
+	}
+	
+	&.widget-info{
+		background-color: @info-color;
+		
+		&:before{
+			background-color: @info-color;
+		}
+	}
+	
+	.sidebar-widget-inner{
+		position: relative;
+	}
+	
+	.sidebar-widget-title{
+		.font-size(2.4);
+		text-transform: lowercase;
+	}
+	
+	.sidebar-widget-description{
+		.font-family("Roboto");
+		font-weight: 400;
+	}
+}

@@ -1,0 +1,333 @@
+///////////////////////////////////////////////////////////////////
+//
+//                       ELEMENTS
+//
+///////////////////////////////////////////////////////////////////
+
+/* ========================= */
+/*        NO PADDING  	     */
+/* ========================= */
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+/* ========================= */
+/*      SOCIAL LIST     	 */
+/* ========================= */
+
+.social-list{
+	margin-bottom: 0;
+	.clearfix;
+	
+	.social-item{
+		float: left;
+		width: 25%;
+		height: 50px;
+		list-style: none;
+		border: 1px solid @primary-site-color;
+		background: lighten(@primary-site-color, 3%);
+	}
+	
+	&.colored{
+		.facebook{
+			border: @facebook-color;
+			background: @facebook-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@facebook-color, 8%);
+					background: darken(@facebook-color, 8%);
+				}
+			}
+		}
+		
+		.instagram{
+			border: @instagram-color;
+			background: @instagram-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@instagram-color, 8%);
+					background: darken(@instagram-color, 8%);
+				}
+			}
+		}
+		
+		.twitter{
+			border: @twitter-color;
+			background: @twitter-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@twitter-color, 8%);
+					background: darken(@twitter-color, 8%);
+				}
+			}
+		}
+		
+		.google{
+			border: @google-color;
+			background: @google-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@google-color, 8%);
+					background: darken(@google-color, 8%);
+				}
+			}
+		}
+		
+		.youtube{
+			border: @youtube-color;
+			background: @youtube-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@youtube-color, 8%);
+					background: darken(@youtube-color, 8%);
+				}
+			}
+		}
+		
+		.whatsapp{
+			border: @whatsapp-color;
+			background: @whatsapp-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@whatsapp-color, 8%);
+					background: darken(@whatsapp-color, 8%);
+				}
+			}
+		}
+		
+		.soundcloud{
+			border: @soundcloud-color;
+			background: @soundcloud-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@soundcloud-color, 8%);
+					background: darken(@soundcloud-color, 8%);
+				}
+			}
+		}
+		
+		.linkedin{
+			border: @linkedin-color;
+			background: @linkedin-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@linkedin-color, 8%);
+					background: darken(@linkedin-color, 8%);
+				}
+			}
+		}
+		
+		.pinterest{
+			border: @pinterest-color;
+			background: @pinterest-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@pinterest-color, 8%);
+					background: darken(@pinterest-color, 8%);
+				}
+			}
+		}
+		
+		.spotify{
+			border: @spotify-color;
+			background: @spotify-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@spotify-color, 8%);
+					background: darken(@spotify-color, 8%);
+				}
+			}
+		}
+		
+		.email{
+			border: @email-color;
+			background: @email-color;
+			
+			&:hover, &:focus{
+				a{
+					border: darken(@email-color, 8%);
+					background: darken(@email-color, 8%);
+				}
+			}
+		}
+	}
+	
+	a{
+		width: 100%;
+		height: 100%;
+		display: block;
+		line-height: 50px;
+		text-align: center;
+		color: @white;
+		.font-size(2.0);
+		.transition(0.2s);
+		
+		&:hover, &:focus{
+			background: @secondary-site-color;
+		}
+	}
+}
+
+/* ========================= */
+/*      	TAG LIST     	 */
+/* ========================= */
+
+.tag-list{
+	.clearfix;
+	
+	.tag-item{
+		float: left;
+		margin: 0 5px 5px 0;
+		list-style: none;
+	}
+	
+	a{
+		display: block;
+		padding: 5px 8px;
+		background: @secondary-site-color;
+		color: @white-light;
+		
+		&:hover, &:focus{
+			background: darken(@secondary-site-color, 6%);
+		}
+	}
+}
+
+/* ========================= */
+/*      	TAG LIST     	 */
+/* ========================= */
+
+.block-example-nopadding{
+	padding: 50px 10px;
+	text-align: center;
+	background: darken(@white-light, 10%);
+	color: #444;
+	text-transform: uppercase;
+	font-weight: 700;
+	.font-size(2.0);
+	
+	&.darker{
+		background: darken(@white-light, 14%);
+	}
+}
+
+/* ========================= */
+/*      	TABLES 	    	 */
+/* ========================= */
+
+.table > tbody > tr > td, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > td, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > thead > tr > th{
+	padding: 12px;
+}
+
+.table-bordered > thead > tr > td, 
+.table-bordered > thead > tr > th{
+	border-bottom-width: 1px;
+}
+
+/* ========================= */
+/*      	TABS 	    	 */
+/* ========================= */
+
+.tab-content{
+	padding: 15px;
+	background: @white;
+	border: 1px solid #ddd;
+	border-top: none;
+}
+
+.nav-tabs > li > a{
+	color: #777;
+}
+
+/* ========================= */
+/*      TOGGLE / COLLAPSE 	 */
+/* ========================= */
+
+.toggle-panel{
+	background: @white;
+	border: 1px solid darken(@white-light, 8%);
+	border-top: none;
+	
+	.toggle-panel-inner{
+		padding: 15px;
+	}
+}
+
+/* ========================= */
+/*        INSTAFEED      	 */
+/* ========================= */
+
+.instafeed{
+	.clear;
+	
+	a{
+		position: relative;
+		width: 33.333%;
+		float: left;
+		display: block;
+		
+		img{
+			@media screen and (max-width: @tablet){
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		
+		&:after{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background: @secondary-site-color;
+			.opacity(0);
+			.transition(0.2s);
+		}
+		
+		&:hover, &:focus{
+			&:after{
+				.opacity(0.7);
+			}
+		}
+	}
+}
+
+/* ========================= */
+/*      	FLOATS 		 	 */
+/* ========================= */
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	flex: right;
+}
+
+/* ========================= */
+/*      COLUMN INVERSE 		 */
+/* ========================= */
+
+.column-inverse{
+	float: right;
+}

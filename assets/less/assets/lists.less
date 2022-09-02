@@ -1,0 +1,43 @@
+///////////////////////////////////////////////////////////////////
+//
+//                      	LISTS
+//
+///////////////////////////////////////////////////////////////////
+
+/* ========================= */
+/*      LIST TOP POST    	 */
+/* ========================= */
+
+.list-top-post{
+	margin: 0;
+	
+	li{
+		position: relative;
+		padding: 10px 0 10px 30px;
+		list-style: none;
+		
+		+ li{
+			border-top: 1px solid rgba(255, 255, 255, 0.3);
+		}
+		
+		&:last-child{
+			padding-bottom: 0;
+		}
+		
+		&:before{
+			content: "→";
+			position: absolute;
+			left: 0;
+			color: @primary-site-color;
+		}
+	}
+	
+	a{
+		color: @white;
+		.font-size(1.6);
+		
+		&:hover, &:focus{
+			color: @primary-site-color;
+		}
+	}
+}

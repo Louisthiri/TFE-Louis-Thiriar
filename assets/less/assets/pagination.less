@@ -1,0 +1,99 @@
+///////////////////////////////////////////////////////////////////
+//
+//                      	PAGINATION
+//
+///////////////////////////////////////////////////////////////////
+
+.pagination{
+	margin-top: 10px;
+}
+
+.pagination > li{
+	.inline-block;
+}
+
+.pagination > li > a, .pagination > li > span{
+	padding: 12px 16px;
+	color: @secondary-site-color;
+	background: lighten(@primary-color, 8%);
+	border-color: lighten(@primary-color, 12%);
+	.rounded(4px);
+	
+	&.active{
+		color: @secondary-site-color;
+		background: lighten(@primary-color, 15%);
+		border-color: lighten(@primary-color, 15%);
+		pointer-events: none;
+	}
+	
+	&:hover, &:focus{
+		color: @secondary-site-color;
+		background: lighten(@primary-color, 15%);
+		border-color: lighten(@primary-color, 15%);
+	}
+}
+
+/* ========================= */
+/*      CUSTOM PAGINATION    */
+/* ========================= */
+
+.custom-pagination{
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	border: 1px solid darken(@white-light, 8%);
+	.rounded(2px);
+	
+	a{
+		position: relative;
+		display: block;
+		padding: 30px;
+		color: #444;
+		background: darken(@white-light, 3%);
+		
+		@media screen and (min-width: @tablet-min){
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		&:hover, &:focus{
+			background: darken(@white-light, 5%);
+		}
+		
+		i{
+			position: absolute;
+			top: 50%;
+			margin-top: -7px;
+		}
+		
+		&.pagination-prev{
+			padding-left: 60px;
+			
+			i{
+				left: 15px;
+			}
+		}
+		
+		&.pagination-next{
+			padding-right: 60px;
+			text-align: right;
+			
+			@media screen and (min-width: @tablet-min){
+				border-left: 1px solid darken(@white-light, 8%);
+			}
+			
+			@media screen and (max-width: @tablet){
+				border-top: 1px solid darken(@white-light, 8%);
+			}
+			
+			i{
+				right: 15px;
+			}
+		}
+	}
+	
+	p{
+		margin: 0;
+		font-weight: 700;
+	}
+}
